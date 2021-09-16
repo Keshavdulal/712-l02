@@ -23,9 +23,9 @@ const App = () => {
     setuserName(name);
   };
 
-  // const handleClear = () => {
-  //   setuserName('');
-  // };
+  const handleClear = () => {
+    setuserName('');
+  };
 
   return (
     <SafeAreaView
