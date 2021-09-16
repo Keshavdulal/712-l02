@@ -1,56 +1,37 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React, {useState} from 'react';
-import type {Node} from 'react';
 import {
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
   Text,
-  useColorScheme,
   View,
   Switch,
   TextInput,
   Button,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App: () => Node = () => {
-  // const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
   const [isDarkMode, setDarkMode] = useState(true);
-  const [userName, setuserName] = useState('');
+  // const [userName, setuserName] = useState('');
 
-  const toggleDarkMode = () => {
-    setDarkMode(!isDarkMode);
-  };
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!isDarkMode);
+  // };
 
-  const handleTextChange = name => {
-    setuserName(name);
-  };
+  // const handleTextChange = name => {
+  //   setuserName(name);
+  // };
 
-  const handleClear = () => {
-    setuserName('');
-  };
+  // const handleClear = () => {
+  //   setuserName('');
+  // };
 
   return (
     <SafeAreaView
       style={isDarkMode ? styles.rootViewDark : styles.rootViewLight}>
       {/* Dark Mode */}
-      <View
+      {/* <View
         style={{
           display: 'flex',
           flexDirection: 'row',
@@ -72,9 +53,10 @@ const App: () => Node = () => {
           value={isDarkMode}
           onValueChange={toggleDarkMode}
         />
-      </View>
+      </View> */}
 
-      <View
+      {/* Form Section */}
+      {/* <View
         style={{
           padding: 20,
         }}>
@@ -101,7 +83,7 @@ const App: () => Node = () => {
           onChangeText={handleTextChange}
         />
         <Button title="Clear" onPress={handleClear} />
-      </View>
+      </View> */}
     </SafeAreaView>
   );
 };
