@@ -13,15 +13,15 @@ import {
 
 const App = () => {
   const [isDarkMode, setDarkMode] = useState(true);
-  // const [userName, setuserName] = useState('');
+  const [userName, setuserName] = useState('');
 
   // const toggleDarkMode = () => {
   //   setDarkMode(!isDarkMode);
   // };
 
-  // const handleTextChange = name => {
-  //   setuserName(name);
-  // };
+  const handleTextChange = name => {
+    setuserName(name);
+  };
 
   // const handleClear = () => {
   //   setuserName('');
@@ -56,7 +56,7 @@ const App = () => {
       </View> */}
 
       {/* Form Section */}
-      {/* <View
+      <View
         style={{
           padding: 20,
         }}>
@@ -83,7 +83,7 @@ const App = () => {
           onChangeText={handleTextChange}
         />
         <Button title="Clear" onPress={handleClear} />
-      </View> */}
+      </View>
     </SafeAreaView>
   );
 };
