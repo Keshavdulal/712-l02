@@ -15,9 +15,9 @@ const App = () => {
   const [isDarkMode, setDarkMode] = useState(true);
   const [userName, setuserName] = useState('');
 
-  // const toggleDarkMode = () => {
-  //   setDarkMode(!isDarkMode);
-  // };
+  const toggleDarkMode = () => {
+    setDarkMode(!isDarkMode);
+  };
 
   const handleTextChange = name => {
     setuserName(name);
@@ -31,7 +31,7 @@ const App = () => {
     <SafeAreaView
       style={isDarkMode ? styles.rootViewDark : styles.rootViewLight}>
       {/* Dark Mode */}
-      {/* <View
+      <View
         style={{
           display: 'flex',
           flexDirection: 'row',
@@ -53,7 +53,7 @@ const App = () => {
           value={isDarkMode}
           onValueChange={toggleDarkMode}
         />
-      </View> */}
+      </View>
 
       {/* Form Section */}
       <View
